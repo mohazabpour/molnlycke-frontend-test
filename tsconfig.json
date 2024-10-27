@@ -25,8 +25,8 @@
       "@models/*": ["app/models/*"],
       "@environment/*": ["environments/*"],
       "@components/*": ["app/components/*"],
-      "@layout/*": ["app/layout/*"],
-      "@interfaces/*": ["app/layout/interfaces/*"]
+      "@layout-services/*": ["app/layout/*"],
+      "@layout-interfaces/*": ["app/layout/interfaces/*"]
     }
   },
   "angularCompilerOptions": {
