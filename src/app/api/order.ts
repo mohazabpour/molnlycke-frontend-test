@@ -1,7 +1,7 @@
 import {Customer} from '@app/api/customer';
 import {Product} from '@app/api/product';
 
-export interface order {
+export interface Order {
   id: number;
   product: Product;
   date: string;
