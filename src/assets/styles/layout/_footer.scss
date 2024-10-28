@@ -1,8 +1,70 @@
 .layout-footer {
-  transition: margin-left $transitionDuration;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 1rem;
   border-top: 1px solid var(--surface-border);
+  background-color: $primary;
+  color: $white;
+  padding: 2rem 1rem;
+  text-align: left;
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .footer-section {
+      flex: 1;
+      padding: 0 1rem;
+
+      h2, h3 {
+        margin-bottom: 1rem;
+        color: $white;
+      }
+
+      p {
+        color: $grey-50;
+        line-height: 1.5;
+      }
+
+      a {
+        color: $white;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .logo img {
+      width: 100px;
+    }
+  }
+
+  .sub-footer {
+    margin-top: 2rem;
+    border-top: 1px solid $secondary-light;
+    padding-top: 1rem;
+    font-size: 0.9rem;
+    text-align: center;
+
+    a {
+      color: $grey-50;
+      margin: 0 1rem;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    p {
+      margin-top: 0.5rem;
+      color: $grey-50;
+    }
+  }
 }

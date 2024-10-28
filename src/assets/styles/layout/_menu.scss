@@ -79,15 +79,11 @@
 
       &.active-route {
         font-weight: 700;
-        color: var(--primary-color);
+        color: $secondary;
       }
 
       &:hover {
         background-color: var(--surface-hover);
-      }
-
-      &:focus {
-        @include focused-inset();
       }
     }
 
