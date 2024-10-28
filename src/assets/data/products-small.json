@@ -1,0 +1,74 @@
+{
+  "data": [
+    {
+      "id": "1000",
+      "code": "956601",
+      "name": "Malskivor Macap M2M",
+      "description": "Product Description",
+      "image": "assets/images/avance-solo.png",
+      "price": 650  ,
+      "category": "Accessories",
+      "quantity": 24,
+      "variant": "10",
+      "inventoryStatus": "INSTOCK",
+      "label": "Super Deal!",
+      "rating": 5
+    },
+    {
+      "id": "1001",
+      "code": "956601",
+      "name": "Malskivor Macap M4D",
+      "description": "Product Description",
+      "image": "assets/images/exufiber-square.png",
+      "price": 720,
+      "category": "Accessories",
+      "quantity": 61,
+      "variant": "10",
+      "inventoryStatus": "INSTOCK",
+      "label": "Campaign",
+      "rating": 4
+    },
+    {
+      "id": "1002",
+      "code": "956601",
+      "name": "Kugghjul Baratza",
+      "description": "Product Description",
+      "image": "assets/images/granulox.png",
+      "price": 790,
+      "category": "Fitness",
+      "quantity": 2,
+      "variant": "10",
+      "inventoryStatus": "LOWSTOCK",
+      "label": "Super Deal!",
+      "rating": 3
+    },
+    {
+      "id": "1003",
+      "code": "956601",
+      "name": "Hopper Eureka",
+      "description": "Product Description",
+      "image": "assets/images/mepilex-border-flex-oval.png",
+      "price": 290,
+      "category": "Clothing",
+      "quantity": 25,
+      "variant": "10",
+      "inventoryStatus": "INSTOCK",
+      "label": "Super Deal!",
+      "rating": 5
+    },
+    {
+      "id": "1004",
+      "code": "956601",
+      "name": "Baratza Preciso",
+      "description": "Product Description",
+      "image": "assets/images/turning_and_positioning_system.png",
+      "price": 15,
+      "category": "Accessories",
+      "quantity": 730,
+      "variant": "10",
+      "inventoryStatus": "INSTOCK",
+      "label": "Super Deal!",
+      "rating": 4
+    }
+  ]
+}
