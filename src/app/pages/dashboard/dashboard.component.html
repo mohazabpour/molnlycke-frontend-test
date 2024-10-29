@@ -1,1 +1,76 @@
-<p>dashboard works!</p>
+<div class="dashboard-greetings">
+  <span>Mill Luck Portal</span>
+  <p>Good morning, Jonas</p>
+</div>
+<div class="dashboard-main">
+  <div class="dashboard-side-panel">
+    <h2>Shortcuts</h2>
+    <p-card>
+      <ul class="shortcuts">
+        <li>
+          <i class="pi pi-pencil"></i>
+          <span>New List</span>
+        </li>
+        <li>
+          <i class="pi pi-calculator"></i>
+          <span>Calculator</span>
+        </li>
+        <li>
+          <i class="pi pi-search"></i>
+          <span>Tool Finder</span>
+        </li>
+        <li>
+          <i class="pi pi-question-circle"></i>
+          <span>FAQ</span>
+        </li>
+      </ul>
+    </p-card>
+    <h2>Order Information</h2>
+    <p-tabView>
+      <p-tabPanel header="New Orders"> Content 1 </p-tabPanel>
+      <p-tabPanel header="Completed orders">
+        <ng-template pTemplate="content"> Complex Content to Lazy Load </ng-template>
+      </p-tabPanel>
+    </p-tabView>
+  </div>
+
+  <!-- Main Panel -->
+  <div class="dashboard-main-panel">
+    <div class="news-container">
+      <h2>News</h2>
+      <p-carousel
+        [value]="newsCards()!"
+        [numVisible]="1"
+        [numScroll]="1"
+        [circular]="true"
+        [showNavigators]="false">
+        <ng-template let-news pTemplate="item">
+          <app-news-card [news]="news"></app-news-card>
+        </ng-template>
+      </p-carousel>
+    </div>
+
+    <div class="products-container">
+      <div class="products-header">
+        <h2>Products</h2>
+        <a href="#">See all products
+          <i class="pi pi-arrow-right"></i>
+        </a>
+      </div>
+      <p-carousel
+        [value]="products()!"
+        [numVisible]="5"
+        [numScroll]="2"
+        [circular]="false"
+        [showNavigators]="false">
+        <ng-template let-product pTemplate="item">
+          <app-product-card [product]="product"></app-product-card>
+        </ng-template>
+      </p-carousel>
+    </div>
+
+    <div class="calculator-container">
+      <app-calculator></app-calculator>
+    </div>
+  </div>
+</div>
