@@ -1,0 +1,19 @@
+.calculator-widget {
+  display: flex;
+  flex-direction: row;
+  padding: 3rem;
+  gap: 3rem;
+}
+
+.panel-sliders {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 1 2;
+}
+
+.panel-results {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1;
+}

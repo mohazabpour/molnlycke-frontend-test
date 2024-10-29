@@ -1,0 +1,31 @@
+<p-card header="Mill Luck Calculator">
+  <p-divider />
+  <div class="calculator-widget">
+    <div class="panel-sliders">
+      <h4>Adjust the numbers</h4>
+      <div>
+        <label for="perOrder">Components per order</label>
+        <input id="perOrder" name="perOrder" type="text" pInputText [(ngModel)]="perOrder" class="w-1 mb-3 mx-5"/>
+        <p-slider [(ngModel)]="perOrder" class="w-full" />
+      </div>
+      <div>
+        <label for="perYear">Orders per years</label>
+        <input id="perYear" name="perYear" type="text" pInputText [(ngModel)]="perYear" class="w-1 mb-3 mx-5"/>
+        <p-slider [(ngModel)]="perYear" class="w-full"/>
+      </div>
+    </div>
+    <div class="panel-results">
+      <h4>Estimated savings</h4>
+      <p>By using us compared to our competitors</p>
+      <div>
+        <h4>Saved capital</h4>
+        <h2>{{perOrderComputed()}} SEK</h2>
+      </div>
+      <div>
+        <h4>Saved CO2e</h4>
+        <h2>{{perYearComputed()}} CO2e</h2>
+      </div>
+    </div>
+  </div>
+</p-card>
+
