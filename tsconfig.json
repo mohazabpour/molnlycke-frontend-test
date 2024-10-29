@@ -26,7 +26,8 @@
       "@environment/*": ["environments/*"],
       "@components/*": ["app/components/*"],
       "@layout-services/*": ["app/layout/*"],
-      "@layout-interfaces/*": ["app/layout/interfaces/*"]
+      "@layout-interfaces/*": ["app/layout/interfaces/*"],
+      "@api/*": ["app/api/*"],
     }
   },
   "angularCompilerOptions": {
