@@ -11,3 +11,8 @@ export interface Product {
   image?: string;
   rating?: number;
 }
+
+export interface Result<T> {
+  data: T | undefined;
+  error?: string;
+}
