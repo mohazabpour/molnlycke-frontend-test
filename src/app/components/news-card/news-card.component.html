@@ -1,0 +1,13 @@
+@if (news()) {
+    <p-card [header]="news()?.title">
+      <p>
+        {{ news()?.description}}
+      </p>
+      <ng-template pTemplate="footer">
+        <div class="flex gap-3 mt-1">
+          <p-button pRipple  label="Read more" class="w-fit" type="button"/>
+        </div>
+      </ng-template>
+    </p-card>
+}
+
