@@ -1,0 +1,32 @@
+{
+  "data": [
+    {
+      "customers": [
+        {
+          "id": 100,
+          "name": "Jonas Johansson",
+          "date": "2024-10-21",
+          "status": "active"
+        },
+        {
+          "id": 21,
+          "name": "Leon Rodrigues",
+          "date": "2009-07-13",
+          "status": "active"
+        },
+        {
+          "id": 43,
+          "name": "Claire Morrow",
+          "date": "2016-09-16",
+          "status": "active"
+        },
+        {
+          "id": 66,
+          "name": "Octavia Murillo",
+          "date": "2020-08-24",
+          "status": "active"
+        }
+      ]
+    }
+  ]
+}
