@@ -1,0 +1,16 @@
+@if (product()) {
+  <p-card [style]="{ width: '250px', height: 'fit-content' }">
+    <ng-template pTemplate="header">
+      <img [alt]="product()?.name" [src]="product()?.image" width="50px"/>
+    </ng-template>
+    <h4>{{product()?.name}}</h4>
+    <p>{{product()?.code}} - {{product()?.rating}} variants</p>
+    <h3>{{product()?.price}} SEK</h3>
+    <ng-template pTemplate="footer">
+      <div class="flex gap-3 mt-1">
+        <p-button icon="pi pi-cart-plus" label="Add to cart" class="w-full" styleClass="w-full" type="button"/>
+      </div>
+    </ng-template>
+  </p-card>
+}
+
