@@ -19,6 +19,8 @@ export class TopBarComponent {
 
   @ViewChild('topbarmenu') menu!: ElementRef;
 
+  @ViewChild('topbarmainmenu') mainMenu!: ElementRef;
+
   constructor(public layoutService: LayoutService) {}
 
 }
