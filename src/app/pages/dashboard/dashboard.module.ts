@@ -12,6 +12,8 @@ import {provideHttpClient} from '@angular/common/http';
 import {ProductCardComponent} from '@components/product-card/product-card.component';
 import {CalculatorComponent} from '@components/calculator-widget/calculator.component';
 import {CardModule} from 'primeng/card';
+import {OrdersService} from '@components/order-item/orders.service';
+import {OrderItemComponent} from '@components/order-item/order-item.component';
 
 @NgModule({
   imports: [
@@ -24,9 +26,10 @@ import {CardModule} from 'primeng/card';
     ProductCardComponent,
     CalculatorComponent,
     CardModule,
+    OrderItemComponent,
   ],
   declarations: [DashboardComponent],
-  providers: [provideHttpClient(), NewsCardService, ProductsService],
+  providers: [provideHttpClient(), NewsCardService, ProductsService, OrdersService],
 
 })
 export class DashboardModule {}
