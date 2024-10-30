@@ -25,13 +25,33 @@
         </li>
       </ul>
     </p-card>
-    <h2>Order Information</h2>
-    <p-tabView>
-      <p-tabPanel header="New Orders"> Content 1 </p-tabPanel>
-      <p-tabPanel header="Completed orders">
-        <ng-template pTemplate="content"> Complex Content to Lazy Load </ng-template>
-      </p-tabPanel>
-    </p-tabView>
+    <div class="orders-widget">
+      <h2>Order Information</h2>
+      <p-tabView>
+        <p-tabPanel header="New Orders">
+          <div class="orders-list">
+            @for (order of orders(); track order.id) {
+              @if (order.status !== 'DELIVERED') {
+                <app-order-item [order]="order"></app-order-item>
+              }
+            }
+            <a href="#">See all changes</a>
+          </div>
+        </p-tabPanel>
+        <p-tabPanel header="Completed orders">
+          <ng-template pTemplate="content">
+            <div class="orders-list">
+              @for (order of orders(); track order.id) {
+                @if (order.status === 'DELIVERED') {
+                  <app-order-item [order]="order"></app-order-item>
+                }
+              }
+              <a href="#">See all changes</a>
+            </div>
+          </ng-template>
+        </p-tabPanel>
+      </p-tabView>
+    </div>
   </div>
 
   <!-- Main Panel -->
@@ -62,7 +82,8 @@
         [numVisible]="5"
         [numScroll]="2"
         [circular]="false"
-        [showNavigators]="false">
+        [showNavigators]="false"
+        [showIndicators]="products()?.length! > 5">
         <ng-template let-product pTemplate="item">
           <app-product-card [product]="product"></app-product-card>
         </ng-template>

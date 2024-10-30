@@ -1,0 +1,17 @@
+<div class="order-container">
+  <div class="order-row">
+    @if (order()?.status === 'PENDING') {
+      <span class="pi pi-circle-on"></span>
+    } @else if (order()?.status === 'DELIVERED') {
+      <span class="pi pi-check"></span>
+    } @else {
+      <span class="pi pi-circle-off"></span>
+    }
+    <div class="order-col">
+      <div> {{order()?.date}} - '{{ order()?.productCode}}'</div>
+      <p-tag [severity]="getStatusType(order()?.status!)" [value]="order()?.status?.toLowerCase()" [style]="{ fontSize: '1em', textTransform: 'capitalize' }"/>
+    </div>
+    <i class="pi pi-arrow-right"></i>
+  </div>
+
+</div>
