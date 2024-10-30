@@ -10,6 +10,7 @@
   transition: left $transitionDuration;
   display: flex;
   align-items: center;
+  gap: 2rem;
   box-shadow: 0px 3px 5px rgba(0,0,0,.02), 0px 0px 2px rgba(0,0,0,.05), 0px 1px 4px rgba(0,0,0,.08);
 
   .layout-topbar-logo {
@@ -27,6 +28,33 @@
     }
   }
 
+  .layout-menu-items {
+    ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      gap: 2rem;
+
+      li {
+        display: flex;
+        font-size: 1.2em;
+
+        a {
+          padding: .5rem;
+          border-radius: $borderRadius;
+          color: $white;
+          transition: background-color $transitionDuration, color $transitionDuration;
+
+          &:hover {
+            background-color: $surface-hover;
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+
   .layout-topbar-button {
     display: inline-flex;
     justify-content: center;
@@ -40,8 +68,8 @@
     transition: background-color $transitionDuration;
 
     &:hover {
-      color: var(--text-color);
-      background-color: var(--surface-hover);
+      color: $text-color;
+      background-color: $surface-hover;
     }
 
     i {
@@ -102,7 +130,7 @@
       margin-left: 0;
       position: absolute;
       flex-direction: column;
-      background-color: var(--surface-overlay);
+      background-color: $surface-overlay;
       box-shadow: 0px 3px 5px rgba(0,0,0,.02), 0px 0px 2px rgba(0,0,0,.05), 0px 1px 4px rgba(0,0,0,.08);
       border-radius: 12px;
       padding: 1rem;

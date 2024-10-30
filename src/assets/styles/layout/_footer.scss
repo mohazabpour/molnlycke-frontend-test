@@ -26,7 +26,7 @@
       }
 
       p {
-        color: $grey-50;
+        color: $white;
         line-height: 1.5;
       }
 
@@ -34,6 +34,7 @@
         color: $white;
         text-decoration: none;
         &:hover {
+          color: $primary-100;
           text-decoration: underline;
         }
       }
@@ -52,11 +53,12 @@
     text-align: center;
 
     a {
-      color: $grey-50;
+      color: $white;
       margin: 0 1rem;
       text-decoration: none;
 
       &:hover {
+        color: $primary-100;
         text-decoration: underline;
       }
     }
