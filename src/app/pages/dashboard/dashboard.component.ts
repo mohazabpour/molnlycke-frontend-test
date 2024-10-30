@@ -21,4 +21,29 @@ export class DashboardComponent {
 
   //ORDERS
   orders = this.ordersService.orders;
+
+
+  responsiveOptions = [
+    {
+      breakpoint: '1200px',
+      numVisible: 3,
+      numScroll: 3
+    },
+    {
+      breakpoint: '992px',
+      numVisible: 3,
+      numScroll: 3
+    },
+    {
+      breakpoint: '768px',
+      numVisible: 2,
+      numScroll: 2
+    },
+    {
+      breakpoint: '576px',
+      numVisible: 1,
+      numScroll: 1
+    }
+  ];
+
 }

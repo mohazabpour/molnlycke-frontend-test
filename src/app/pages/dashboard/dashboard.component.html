@@ -83,7 +83,8 @@
         [numScroll]="2"
         [circular]="false"
         [showNavigators]="false"
-        [showIndicators]="products()?.length! > 4">
+        [showIndicators]="products()?.length! > 4"
+        [responsiveOptions]="responsiveOptions">
         <ng-template let-product pTemplate="item">
           <app-product-card [product]="product"></app-product-card>
         </ng-template>
