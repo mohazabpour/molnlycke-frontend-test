@@ -79,11 +79,11 @@
       </div>
       <p-carousel
         [value]="products()!"
-        [numVisible]="5"
+        [numVisible]="4"
         [numScroll]="2"
         [circular]="false"
         [showNavigators]="false"
-        [showIndicators]="products()?.length! > 5">
+        [showIndicators]="products()?.length! > 4">
         <ng-template let-product pTemplate="item">
           <app-product-card [product]="product"></app-product-card>
         </ng-template>
