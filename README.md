@@ -1,6 +1,6 @@
 # MolnlyckeFrontendTest
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.10.
+This project is the Frontend candidate  test for Molnlycke Health Care.
 
 ## Development server
 
