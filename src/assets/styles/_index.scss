@@ -1,0 +1,15 @@
+@import 'variables';
+
+// LAYOUT
+@import "layout/preloading";
+@import "layout/main";
+@import "layout/topbar";
+@import "layout/menu";
+@import "layout/content";
+@import "layout/footer";
+@import "layout/responsive";
+@import "layout/typography";
+
+
+//PAGES
+@import "pages/dashboard.scss";

@@ -1,14 +1,13 @@
 .layout-footer {
-  border-top: 1px solid var(--surface-border);
   background-color: $primary;
   color: $white;
-  padding: 2rem 1rem;
   text-align: left;
 
   .footer-content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 2rem 1rem;
     gap: 2rem;
 
     @media (min-width: 768px) {
@@ -47,8 +46,8 @@
 
   .sub-footer {
     margin-top: 2rem;
-    border-top: 1px solid $secondary-light;
-    padding-top: 1rem;
+    background-color: $secondary-light;
+    padding: 1rem;
     font-size: 0.9rem;
     text-align: center;
 
