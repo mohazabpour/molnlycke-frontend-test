@@ -10,6 +10,7 @@ import { MenuComponent } from './menu/menu.component';
 import { MenuItemComponent } from './menu-item/menu-item.component';
 import { TopBarComponent } from './topbar/top-bar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import {Ripple} from 'primeng/ripple';
 
 @NgModule({
   declarations: [
@@ -20,12 +21,13 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     TopBarComponent,
     SidebarComponent,
   ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    BrowserAnimationsModule,
-    RouterModule,
-  ],
+	imports: [
+		BrowserModule,
+		FormsModule,
+		BrowserAnimationsModule,
+		RouterModule,
+		Ripple,
+	],
   exports: [LayoutComponent],
 })
 export class LayoutModule {}
