@@ -11,7 +11,7 @@
 .dashboard-main {
   display: flex;
   flex: 1 ;
-  gap: 1rem;
+  gap: 2rem;
   padding: 0 1rem 3rem;
 }
 
@@ -24,6 +24,7 @@
     flex-direction: row;
     margin:0;
     padding: 0;
+    width: 100%;
 
     li {
       display: flex;
@@ -51,7 +52,7 @@
   }
 
   .orders-widget {
-    margin-block-start: 50px;
+    margin-block: 50px;
   }
   .orders-list {
     & :hover i {
@@ -123,4 +124,25 @@
 .calculator-container {;
   margin-block: 2em;
   flex-direction: column;
+}
+
+@media (max-width: 991px) {
+  .dashboard-main {
+
+    flex-direction: column;
+  }
+  .dashboard-side-panel {
+    ul.shortcuts {
+      justify-content: space-evenly;
+      li {
+        padding: 1rem;
+        flex-direction: row;
+        gap: 15px;
+        i {
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+
 }

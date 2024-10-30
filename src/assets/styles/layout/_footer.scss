@@ -14,6 +14,7 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: flex-start;
+      padding: 3rem 2rem;
     }
 
     .footer-section {
@@ -33,6 +34,7 @@
       a {
         color: $white;
         text-decoration: none;
+
         &:hover {
           color: $primary-100;
           text-decoration: underline;
@@ -40,8 +42,44 @@
       }
     }
 
-    .logo img {
-      width: 100px;
+    .footer-section-panels {
+      display: flex;
+      flex: 2;
+      flex-direction: row;
+      justify-content: space-evenly;
+      gap: 1.5rem;
+
+      @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .footer-section {
+        flex: 1;
+      }
+    }
+
+    .logo {
+      display: flex;
+      flex: 1 2;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+
+      img {
+        width: 100px;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        text-align: left;
+
+        @media (min-width: 768px) {
+          text-align: left;
+        }
+      }
     }
   }
 
@@ -51,6 +89,12 @@
     padding: 1rem;
     font-size: 0.9rem;
     text-align: center;
+
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
     a {
       color: $white;

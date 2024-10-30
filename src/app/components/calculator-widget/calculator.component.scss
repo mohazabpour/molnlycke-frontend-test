@@ -3,6 +3,11 @@
   flex-direction: row;
   padding: 3rem;
   gap: 3rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    flex: 1;
+  }
 }
 
 .panel-sliders {
@@ -10,10 +15,17 @@
   flex-direction: column;
   gap: 2rem;
   flex: 1 2;
+  @media (max-width: 768px) {
+    flex: 1;
+  }
 }
 
 .panel-results {
   display: flex;
   flex-direction: column;
   flex: 1 1;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    flex: 1;
+  }
 }
